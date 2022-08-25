@@ -24,7 +24,11 @@ describe("Demo QA", () => {
     practiceFormPage.stateFieldSelect.contains("Delhi")
       .then(option => {option[0]}).click();
     practiceFormPage.submitButton.click();
-    // let values = ["Elvijs Dobelnieks", "test@test.lv", "Male", "2626262626", "29 February,1984", "Maths", "Music", "Yo street 3", "NCR Delhi"];
-    // practiceFormPage.summaryForm.each(($el, index, $el.should("contain", values)));
+    // let id = 0;
+    // let text = ["Elvijs Dobelnieks", "test@test.lv", "Male", "2626262626", "29 February,1984", "Maths", "Music", "", "Yo street 3", "NCR Delhi"];
+    // practiceFormPage.summaryForm().each(($el) => {
+    //   cy.wrap($el).should("have.text", text[id])
+    //   id++;
+    // })
   })
 });
